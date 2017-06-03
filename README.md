@@ -5,7 +5,8 @@ create your own elements for hyperx tagged templates
 # example
 
 ```js
-const html = require('rbel')(require('hyperscript'), {
+const h = require('hyperscript');
+const html = require('rbel')(h, {
     row: (attrs, children) => html`
         <div class="row">
            ${children}
@@ -23,3 +24,10 @@ console.log(html`
     </column>
 </row>`.outerHTML);
 ```
+
+Values to use for `h`:
+
+* virtual-dom - `vdom.h`
+* react - `React.createElement`
+* bel - `require('bel').createElement`
+* hyperscript - hyperscript
