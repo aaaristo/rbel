@@ -10,13 +10,10 @@ const html = require('rbel')(require('hyperscript'), {
         <div class="row">
            ${children}
         </div>`,
-    column: (attrs, children) => {
-
-    return html`
+    column: (attrs, children) => html`
         <div class="col col-md-${attrs.md}">
            ${children}
-        </div>`
-   },
+        </div>`,
 });
 
 console.log(html`
