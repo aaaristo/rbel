@@ -29,5 +29,5 @@ Values to use for `h`:
 
 * virtual-dom - `vdom.h`
 * react - `React.createElement`
-* bel - `require('bel').createElement`
+* bel - `require('bel').createElement` (only client side see [#1](https://github.com/aaaristo/rbel/issues/1))
 * hyperscript - hyperscript
